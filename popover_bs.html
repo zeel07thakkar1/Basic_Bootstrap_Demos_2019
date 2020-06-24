@@ -1,0 +1,49 @@
+<html>
+    <head>
+       <title>Popover in bootstrap</title> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+    
+    <div class="container text-center">
+        <br><br><br><br>
+        
+        <!--title:Header of popover data-content:body part of popover-->
+        <!--data-trigger:focus(you can click on link so show & click on somewhere else so dismiss it)--> 
+        <!--data-trigger:hover(you can hover on link so show & take pointer from it so dismiss it)--> 
+        <a href="#" data-toggle="popover" title="Popover Top" data-content="This is popover Body part" data-placement="top" data-trigger="hover">Popover_Top</a><br><br><br>
+        
+        
+        <a href="#" data-toggle="popover" title="Popover bottom" title="Popover bottom" data-content="This is popover Body part" data-placement="bottom" data-trigger="hover">Popover_Bottom</a><br><br><br>
+        
+        
+        <a href="#"  data-toggle="popover" title="Popover left"  title="Popover left"data-content="This is popover Body part" data-placement="left" data-trigger="focus">Popover_Left</a><br><br><br>
+        
+        
+        <a href="#" data-toggle="popover" title="Popover right"  title="Popover right"data-content="This is popover Body part" data-placement="right" data-trigger="focus">Popover_Right</a>
+        
+        </div>
+        
+        <!--add jquery for it---->
+        <script type="text/javascript">
+        
+        $(document).ready(function(){
+            
+            $('[data-toggle="popover"]').popover();    
+        });
+        </script>
+        <!-------------------->
+        
+    </body>
+</html>

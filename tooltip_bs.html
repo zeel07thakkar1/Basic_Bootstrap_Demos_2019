@@ -1,0 +1,36 @@
+<html>
+    <head>
+       <title>Tooltip bootstrap</title> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    
+    <body>
+    <div class="container">
+        <br><br><br>
+        
+        <a href="#" title="Show ToolTip" data-toggle="tooltip" data-placement="top">Hover Over Me</a><br><br>
+        <a href="#" title="ShowToolTip" data-toggle="tooltip" data-placement="bottom">Hover Over Me</a><br><br>
+        <a href="#" title="Show ToolTip" data-toggle="tooltip" data-placement="left">Hover Over Me</a><br><br>
+        <a href="#" title="Show ToolTip" data-toggle="tooltip" data-placement="right">Hover Over Me</a><br>
+    </div>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+    
+    </body>
+</html>
